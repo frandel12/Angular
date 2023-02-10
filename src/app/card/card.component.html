@@ -1,0 +1,16 @@
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{ player.Poster }}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{ player.Name }}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{ player.Age }}</li>
+    <li class="list-group-item"> {{ player.Position }}</li>
+    <li class="list-group-item">{{ player.Country }}</li>
+    <li class="list-group-item">{{ player.imdbRating }}</li>
+  </ul>
+  <div class="card-body">
+    <button (click)="OnCardClicked()" type="button" class="btn btn-primary">Like</button>
+    <button type="button" class="btn btn-danger">Dislike</button>
+  </div>
+</div>
